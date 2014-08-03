@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spring"/>
+	<classpathentry kind="lib" path="C:/Spring Hibenate DE/downloads/Spring Hibernate/libraries/other/commons-collections.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Hibenate DE/downloads/Spring Hibernate/libraries/other/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Hibenate DE/downloads/Spring Hibernate/libraries/other/commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Hibenate DE/downloads/Spring Hibernate/libraries/other/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Hibenate DE/downloads/Spring Hibernate/libraries/other/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Hibenate DE/downloads/Spring Hibernate/libraries/other/aopalliance.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Hibenate DE/downloads/Spring Hibernate/libraries/other/cglib-2.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

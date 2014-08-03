@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spring">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/Exercise10.2-Service"/>
+	<classpathentry kind="lib" path="C:/Spring Hibenate DE/downloads/Spring Hibernate/libraries/other/commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Hibenate DE/downloads/Spring Hibernate/libraries/other/aopalliance.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hibernate"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/other utility user lib"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

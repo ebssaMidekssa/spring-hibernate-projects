@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:javaee="http://java.sun.com/xml/ns/javaee"
+	xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	id="WebApp_ID" version="2.4">
+	<display-name>StudentsWebProject</display-name>
+	<welcome-file-list>
+		<welcome-file>StudentsCourseServlet</welcome-file>
+	</welcome-file-list>
+	<filter>
+		<description>
+		</description>
+		<display-name>OpenSessionInViewFilter</display-name>
+		<filter-name>OpenSessionInViewFilter</filter-name>
+		<filter-class>sessioninview.OpenSessionInViewFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>OpenSessionInViewFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<servlet>
+		<description>
+		</description>
+		<display-name>StudentsCourseServlet</display-name>
+		<servlet-name>StudentsCourseServlet</servlet-name>
+		<servlet-class>sessioninview.StudentsCourseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentsCourseServlet</servlet-name>
+		<url-pattern>/StudentsCourseServlet</url-pattern>
+	</servlet-mapping>
+	<jsp-config>
+		<taglib>
+			<taglib-uri>http://java.sun.com/jstl/core</taglib-uri>
+			<taglib-location>/WEB-INF/tld/c.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+</web-app>

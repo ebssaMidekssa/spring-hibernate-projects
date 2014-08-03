@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spring"/>
+	<classpathentry kind="lib" path="C:/Spring Hibenate DE/downloads/Spring Hibernate/libraries/other/commons-collections.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Hibenate DE/downloads/Spring Hibernate/libraries/other/quartz-1.6.4.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Hibenate DE/downloads/Spring Hibernate/libraries/other/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Hibenate DE/downloads/Spring Hibernate/libraries/other/commons-logging.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

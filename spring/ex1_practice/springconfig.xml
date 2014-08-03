@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+    <aop:aspectj-autoproxy/>
+    <bean id="greetingService" class="hello.GreetingImpl">
+        <property name="greetings">
+        	<value>Hello World</value>
+        </property>
+    </bean>
+    <bean id="shippingService" class="hello.ShippingService">
+     <constructor-arg>
+     	 <list>
+     	 <bean id="upsShipper" class="hello.UpsShipper" />
+     	 <bean id="upsPostalshiper" class="hello.UpsPostalShipper" />
+     	 </list>
+     </constructor-arg>
+    </bean>
+    <!-- <bean id="testReferer" class="hello.TestReferer">
+    <constructor-arg ref="testImpl"/>
+    </bean> -->
+    <bean id="testReferer" class="hello.TestReferer">
+    <property name="testimpl" ref="testImpl"/>
+    </bean>
+    <bean id="testImpl" class="hello.TestImpl"></bean>
+    <bean id="traceAdvice" class="hello.TraceAdvice"/>
+</beans>
